@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <HRMS />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HRMS from './components/HRMS.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HRMS
   }
 }
 </script>

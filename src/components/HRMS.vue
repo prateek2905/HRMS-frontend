@@ -1,5 +1,5 @@
 <template>
-    <div id="main">
+    <div class="main">
 
     <div id="page-wrap">
         <div id="all">
@@ -13,7 +13,7 @@
     </div>
 
     <div id="right-content">
-        <button id="btn">Create offer letter</button>
+        <div id="offer"><a href="#">Create Offer Letter</a></div>
 
         <div id="table">
             <table  >
@@ -81,7 +81,47 @@ export default {
 </script>
 
 <style>
-    #all > ul {
+
+body {
+    background-color: #2c3e50;
+}
+
+.main{
+    width: 80%;
+    height: 80%;
+    border-radius: 2%;
+    display: flex;
+    margin: auto;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#right-content{
+	width: 80%;
+}
+
+
+#offer a{
+    text-decoration: none;
+    
+    padding: 18px;
+    background: #2c3e50;
+    border-radius: 3px;
+    color: #6b7278;
+    text-align: center;
+     
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+#all > ul {
     list-style: none;
     float: center;
     width: 200px;
@@ -129,31 +169,6 @@ export default {
 
 #all:active ul:active a:active {
     opacity: 0.9;
-}
-
-
-body {
-    background-color: #313841;
-}
-
-#main{
-    width: 80%;
-    height: 80%;
-    border-radius: 2%;
-    margin: auto;
-    padding: 5%;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#page-wrap {
-    margin: 0px;
-    padding: 0;
-    float: left;
-}
-#right-content{
-    float: right;
-	width: 80%;
 }
 
 strong {
